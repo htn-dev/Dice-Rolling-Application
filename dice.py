@@ -11,6 +11,9 @@ def parse_input(input_string):
     the user to enter a valid number and quit the program.
 
     """
+    if input_string.strip() in {"1","2","3","4","5","6"}:
+        return int(input_string)
+    
 
 
 # ~~~ App's main code block ~~~
