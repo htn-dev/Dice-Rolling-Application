@@ -3,7 +3,6 @@
 def parse_input(input_string):
     """Return `input_string` as an integer between 1 and 6.
 
-
     Check if `input_string` is an integer number between 1 and 6.
 
     If so, return an integer with the same value. Otherwise, tell
