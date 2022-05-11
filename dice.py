@@ -1,8 +1,6 @@
 # dice.py
-
 def parse_input(input_string):
     """Return `input_string` as an integer between 1 and 6.
-
 
     Check if `input_string` is an integer number between 1 and 6.
 
@@ -32,9 +30,11 @@ def roll_dice(num_dice):
     return roll_results
 
 # ~~~ App's main code block ~~~
+
 # 1. Get and Validate user's input
 num_dice_input = input("How many dice do you want to roll? [1-6] ")
 num_dice = parse_input(num_dice_input)
+
 # 2. Roll the dice
 roll_results = roll_dice(num_dice)
 print(roll_results)    # Remove this line after testing the app
