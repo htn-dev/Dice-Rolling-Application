@@ -45,6 +45,7 @@ DICE_ART = {
         "└─────────┘",
     ),
 }
+DIE_HEIGHT = len(DICE_ART[1])
 
 def parse_input(input_string):
     """Return `input_string` as an integer between 1 and 6.
