@@ -46,7 +46,8 @@ DICE_ART = {
     ),
 }
 DIE_HEIGHT = len(DICE_ART[1])
-DICE_WIDTH = len(DICE_ART[1][0])
+DIE_WIDTH = len(DICE_ART[1][0])
+DIE_FACE_SEPARATOR = " "
 
 def parse_input(input_string):
     """Return `input_string` as an integer between 1 and 6.
