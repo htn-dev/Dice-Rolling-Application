@@ -103,6 +103,8 @@ def generate_dice_faces_doagram(dice_values):
         row_string = DIE_FACE_SEPARATOR.join(row_components)
         dice_faces_rows.append(row_string)
 
+    # Generate header with the word "RESUTLS" centered
+    width = len(dice_faces_rows[0])
     
 
 # ~~~ App's main code block ~~~
