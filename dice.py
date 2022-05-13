@@ -105,7 +105,9 @@ def generate_dice_faces_doagram(dice_values):
 
     # Generate header with the word "RESUTLS" centered
     width = len(dice_faces_rows[0])
-    
+    diagram_header = " RESULTS ".center(width, "~")
+    dice_faces_diagram = "\n".join([diagram_header] + dice_faces_rows)
+    return dice_faces_diagram
 
 # ~~~ App's main code block ~~~
 
