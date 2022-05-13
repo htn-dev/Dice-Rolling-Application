@@ -1,4 +1,6 @@
 # dice.py
+import random
+
 def parse_input(input_string):
     """Return `input_string` as an integer between 1 and 6.
 
@@ -14,8 +16,6 @@ def parse_input(input_string):
     else:
         print("Please enter a valid number 1-6: ")
         raise SystemExit(1)
-
-import random
 
 def roll_dice(num_dice):
     """ Return a list of integers with length `num_dice`.
