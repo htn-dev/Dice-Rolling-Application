@@ -77,7 +77,7 @@ def roll_dice(num_dice):
         roll_results.append(roll)
     return roll_results
 
-def generate_dice_faces_doagram(dice_values):
+def generate_dice_faces_diagram(dice_values):
     """Return an ASCII diagram of dice faces from `dice_values`.
     The string returned contains an ASCII representation of each die.
     For example, if `dice_values = [4, 1, 3, 2]` then the string
@@ -118,3 +118,9 @@ num_dice = parse_input(num_dice_input)
 # 2. Roll the dice
 roll_results = roll_dice(num_dice)
 print(roll_results)    # Remove this line after testing the app
+
+# 3. Generate the ASCII diagram of dice faces
+dice_face_diagram = generate_dice_faces_diagram(roll_results)
+
+# 4. Display the diagram
+print(f"\n{dice_face_diagram}")
