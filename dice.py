@@ -100,7 +100,10 @@ def generate_dice_faces_doagram(dice_values):
         row_components = []
         for die in dice_faces:
             row_components.append(die[row_idx])
-        
+        row_string = DIE_FACE_SEPARATOR.join(row_components)
+        dice_faces_rows.append(row_string)
+
+    
 
 # ~~~ App's main code block ~~~
 
