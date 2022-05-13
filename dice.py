@@ -82,21 +82,17 @@ def generate_dice_faces_doagram(dice_values):
     The string returned contains an ASCII representation of each die.
     For example, if `dice_values = [4, 1, 3, 2]` then the string
     returned looks like this:
-
-
     ~~~~~~~~~~~~~~~~~~~ RESULTS ~~~~~~~~~~~~~~~~~~~
-
     ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐
-
     │  ●   ●  │ │         │ │  ●      │ │  ●      │
-
     │         │ │    ●    │ │    ●    │ │         │
-
     │  ●   ●  │ │         │ │      ●  │ │      ●  │
-
     └─────────┘ └─────────┘ └─────────┘ └─────────┘
-
     """
+    # Generate a list of dice faces from DICE_ART
+    dice_faces = []
+    for value in dice_values:
+        dice_faces.append(DICE_ART[value])
 # ~~~ App's main code block ~~~
 
 # 1. Get and Validate user's input
