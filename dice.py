@@ -97,7 +97,11 @@ def generate_dice_faces_doagram(dice_values):
     # Generate a list containing the dice faces rows
     dice_faces_rows = []
     for row_idx in range(DIE_HEIGHT):
+        row_components = []
+        for die in dice_faces:
+            row_components.append(die[row_idx])
         
+
 # ~~~ App's main code block ~~~
 
 # 1. Get and Validate user's input
