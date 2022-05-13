@@ -78,6 +78,25 @@ def roll_dice(num_dice):
     return roll_results
 
 def generate_dice_faces_doagram(dice_values):
+    """Return an ASCII diagram of dice faces from `dice_values`.
+    The string returned contains an ASCII representation of each die.
+    For example, if `dice_values = [4, 1, 3, 2]` then the string
+    returned looks like this:
+
+
+    ~~~~~~~~~~~~~~~~~~~ RESULTS ~~~~~~~~~~~~~~~~~~~
+
+    ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐
+
+    │  ●   ●  │ │         │ │  ●      │ │  ●      │
+
+    │         │ │    ●    │ │    ●    │ │         │
+
+    │  ●   ●  │ │         │ │      ●  │ │      ●  │
+
+    └─────────┘ └─────────┘ └─────────┘ └─────────┘
+
+    """
 # ~~~ App's main code block ~~~
 
 # 1. Get and Validate user's input
