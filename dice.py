@@ -124,7 +124,6 @@ num_dice = parse_input(num_dice_input)
 
 # 2. Roll the dice
 roll_results = roll_dice(num_dice)
-print(roll_results)    # Remove this line after testing the app
 
 # 3. Generate the ASCII diagram of dice faces
 dice_face_diagram = generate_dice_faces_diagram(roll_results)
