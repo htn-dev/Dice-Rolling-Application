@@ -90,9 +90,10 @@ def generate_dice_faces_diagram(dice_values):
     └─────────┘ └─────────┘ └─────────┘ └─────────┘
     """
     # Generate a list of dice faces from DICE_ART
-    dice_faces = []
-    for value in dice_values:
-        dice_faces.append(DICE_ART[value])
+    dice_faces = _get_dice_faces(dice_values)
+    dice_faces_rows = _generate_dice_faces_rows(dice_faces)
+
+
 
     # Generate a list containing the dice faces rows
     dice_faces_rows = []
@@ -108,6 +109,16 @@ def generate_dice_faces_diagram(dice_values):
     diagram_header = " RESULTS ".center(width, "~")
     dice_faces_diagram = "\n".join([diagram_header] + dice_faces_rows)
     return dice_faces_diagram
+
+def _get_dice_faces(dice_values):
+    dice_faces = []
+    for value in dice_values:
+        dice_faces.append(DICE_ART[value])
+    return dice_faces
+
+def _generate_dice_faces_rows(dice_faces):
+    dice_faces_rows = []
+    
 
 # ~~~ App's main code block ~~~
 
