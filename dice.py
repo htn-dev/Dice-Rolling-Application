@@ -1,5 +1,5 @@
 # dice.py
-import randm
+import random
   
 DICE_ART = {
     1: (
