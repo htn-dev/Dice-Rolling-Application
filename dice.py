@@ -1,6 +1,6 @@
 # dice.py
 import random
-     
+    
 DICE_ART = {
     1: (
         "┌─────────┐",
